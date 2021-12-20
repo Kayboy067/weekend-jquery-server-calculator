@@ -63,7 +63,7 @@ function render(array) {
     // loop through an array to append data to DOM
     for (let object of array) {
         $('#hist').append(`
-        ${object.numberInputOne} ${object.signBtn} ${object.numberInputTwo} = ${object.sum}
+        <li>${object.numberInputOne} ${object.signBtn} ${object.numberInputTwo} = ${object.sum}</li>
         `)  
     }
     
