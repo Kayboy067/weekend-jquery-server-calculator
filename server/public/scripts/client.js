@@ -7,7 +7,7 @@ function onReady() {
     $('.signBtn').on('click', equationButton);
     refresh();
 }
-
+// creating a default function to stop reload
 function submitNumber(event) {
     event.preventDefault();
     
@@ -55,14 +55,18 @@ function refresh() {
             console.log('In AJAX GET', response);
             render(response);
         })     
-}
+} // end refresh function
 
+// creating a function to render data to DOM
 function render(array) {
+    $('#hist').empty();
+    // loop through an array to append data to DOM
     for (let object of array) {
         $('#hist').append(`
         ${object.numberInputOne} ${object.signBtn} ${object.numberInputTwo} = ${object.sum}
         `)  
     }
     
-}
+} // end render function
+
 

@@ -29,16 +29,16 @@ app.post('/equalto', (req, res) => {
 })
 
 function totalValue(obj) {
-    if (obj.signBtn==='add') {
+    if (obj.signBtn==='+') {
         obj.sum = Number(obj.numberInputOne) + Number(obj.numberInputTwo);    
     }
-    if (obj.signBtn==='subtract') {
+    if (obj.signBtn==='-') {
         obj.sum = Number(obj.numberInputOne) - Number(obj.numberInputTwo);    
     }
-    if (obj.signBtn==='multiply') {
+    if (obj.signBtn==='*') {
         obj.sum = Number(obj.numberInputOne) * Number(obj.numberInputTwo);    
     }
-    if (obj.signBtn==='division') {
+    if (obj.signBtn==='/') {
         obj.sum = Number(obj.numberInputOne) / Number(obj.numberInputTwo);    
     }
     
