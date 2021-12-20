@@ -38,4 +38,6 @@ Technical tasks
     
 [ ] client.js
     [X] source jQuery
+    [X] setup AJAX endpoint
+    
    
